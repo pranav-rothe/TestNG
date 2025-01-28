@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG_Features.Timeout_Feature">
+      <class name="dataProviders.DataProviderWithBrowser">
         <methods>
-          <include name="methodTwo"/>
+          <include name="TC01" invocation-numbers="1 2"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- testNG_Features.Timeout_Feature -->
+      </class> <!-- dataProviders.DataProviderWithBrowser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
